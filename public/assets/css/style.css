@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.To_do{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #10101d;
+    padding: 18px;
+    border-radius: 8px;
+    width: 480px;
+}
+.To_do h1{
+    color: whitesmoke ;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.to_do_form{
+    display: flex;
+    width: 100%;
+}
+.to_do_form input{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 4px;
+    width: 100%;
+    border-bottom: 2px solid lightcoral;
+
+}
+.to_do_form input:focus-visible{
+    outline: none;
+}
+.to_do_form .form-button{
+    border: none;
+    min-height: 40px;
+    min-width: 40px;
+    background-color: lightcoral;
+    border-radius: 100%;
+    font-size: 20px;
+    transition: scale  0.5s ease;
+}
+
+.to_do_form .form-button:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+.tasks{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 400px;
+    overflow: auto;
+}
+.task{
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+    border-radius: 4px;
+    background-color: #191933;
+    padding: 8px 12px;
+
+}
+.task-description{
+    font-size: 16px;
+}
+.hidden {
+    display: none;
+}
